@@ -149,14 +149,10 @@ int main(int argc, char *argv[])
         if (board[2][0] > board[1][0]) {
              cout << playernames[1]<< " Menang\n";
              }
-        else {
-           if (board[2][0] > board[1][0]) {
-               cout << playernames[0] << " Menang\n";
-               }
+        else 
            if (board[1][0] > board[2][0]) {
-             cout << playernames[1] << " Menang\n";
-             }
-           }     
+             cout << playernames[0] << " Menang\n";
+             }     
          
          //********** AKHIR PERMAINAN **********
          cout << playernames[0] << " " << board[1][0] << "\n" << playernames[1] << " " <<board[2][0] << endl;
@@ -239,7 +235,7 @@ int norm(){
                    whattodo = ENDTURN;
                    return(whattodo);
                    }
-               else if (board[turnnumber][currentslot] == 0) { //End turn
+               else if (board[turnnumber][currentslot] == 0) {
                       board[currentside][currentslot]++;
                       whattodo = ENDTURN;
                       return (whattodo);
